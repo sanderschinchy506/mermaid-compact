@@ -1,6 +1,6 @@
 {
   "name": "mermaid-compact",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Mermaid, prebundled into a single self-contained ESM file (no dependency-graph waterfall).",
   "keywords": [
     "bundle",
