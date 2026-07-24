@@ -1,0 +1,53 @@
+{
+  "name": "mermaid-compact",
+  "version": "0.0.0",
+  "description": "Mermaid, prebundled into a single self-contained ESM file (no dependency-graph waterfall).",
+  "keywords": [
+    "bundle",
+    "diagram",
+    "esm",
+    "mermaid",
+    "prebundled"
+  ],
+  "license": "MIT",
+  "repository": "unjs/mermaid-compact",
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "sideEffects": false,
+  "types": "./dist/index.d.mts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.mts",
+      "default": "./dist/index.mjs"
+    }
+  },
+  "scripts": {
+    "build": "obuild",
+    "dev": "vitest dev",
+    "fmt": "automd && oxlint . --fix && oxfmt .",
+    "lint": "oxlint . && oxfmt --check .",
+    "prepack": "pnpm build",
+    "release": "pnpm test && pnpm build && changelogen --release && npm publish && git push --follow-tags",
+    "test": "pnpm lint && pnpm typecheck && vitest run --coverage",
+    "typecheck": "tsgo --noEmit --skipLibCheck"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@typescript/native-preview": "latest",
+    "@vitest/coverage-v8": "latest",
+    "automd": "latest",
+    "changelogen": "latest",
+    "jsdom": "^29.1.1",
+    "mermaid": "^11.16.0",
+    "obuild": "latest",
+    "oxfmt": "latest",
+    "oxlint": "latest",
+    "rolldown": "^1.2.0",
+    "typescript": "latest",
+    "vite": "^8.1.5",
+    "vitest": "latest"
+  },
+  "packageManager": "pnpm@10.33.2"
+}
